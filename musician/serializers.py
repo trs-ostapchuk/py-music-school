@@ -3,6 +3,7 @@ from rest_framework import serializers
 
 
 class MusicianSerializer(serializers.ModelSerializer):
+    is_adult = serializers.ReadOnlyField()
     class Meta:
 
         model = Musician
