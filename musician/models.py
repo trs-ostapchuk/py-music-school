@@ -6,8 +6,8 @@ class Musician(models.Model):
     first_name = models.CharField(max_length=63)
     last_name = models.CharField(max_length=63)
     instrument = models.CharField(max_length=63)
-    age = models.PositiveIntegerField(
-        validators=[MinValueValidator(13)]
+    age = models.IntegerField(
+        validators=[MinValueValidator(14)]
     )
     date_of_applying = models.DateField(auto_now_add=True)
 
