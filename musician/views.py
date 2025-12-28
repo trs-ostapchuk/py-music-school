@@ -1,5 +1,5 @@
 from musician.models import Musician
-from musician.serializer import MusicianSerializer
+from musician.serializers import MusicianSerializer
 from rest_framework import viewsets
 
 
